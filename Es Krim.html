@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/maukahkamu/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>HTML Buat Kamu</title>
+<link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+<meta name="description" content="HTML Bucin Malas.id">
+</head>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+   </div>
+
+   <audio src="Nanti Kita Seperti Ini.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <section class="first">
+       <div class="wp"><img id="imgsatu" src="https://drive.google.com/file/d/1H7y-x4hvs2gHzsz4wNMbTD1kP_jGWVDE/view?usp=sharing"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       <h1 class="title">Hai Humaira ❤!</h1>
+       <p class="flip">Mas boleh jujur engga nih? ☺️</p>
+       <p class="slide-up"><i>Scroll terus ke bawah ya :)</i></p>
+  </section>
+  
+  <section>
+      <div class="wp"><img id="imgdua" src="https://drive.google.com/file/d/1SpagcYQXxdqcZzqQDzj-OsWNHJKs_XOA/view?usp=drive_link"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      <h2 class="title"><i>Humaira Tersayang</i></h2>
+      <p class="slide-right">Mas sayang banget sama <b class="lingkar">sampean</b>🥹</p>
+  </section>
+  
+  <section>
+  	<div class="wp"><img id="imgtiga" src="https://drive.google.com/file/d/1mJLUiRR51wvtUvbGY28yqFLOT7pRa2RG/view?usp=drive_link"/></div>
+      <p id="teksnimasi">If you ask why I love you, itu karena Mas punya rasa nyaman tersendiri yang ga akan Mas temui di mana pun.<br><br><b><i>Sampean Tau?</i></b><br>Tidak ada yang bisa bikin Mas nyaman selain sampean...<br><br>Dan karena takdir yang membuat kita bersama, Mas merasakan apa itu kenyamanan, apa itu kebahagiaan, dan kamu sekaligus rumah bagi Mas 😊</p>
+  </section>
+  
+  <section>
+  	<div class="wp"><img id="imgempat" src="https://drive.google.com/file/d/1yQyJ5qeizlrCiuibZN_jO6DAP1wJDgK2/view?usp=drive_link"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+      <h2 class="title"><i>Humaira Tersayang</i></h2>
+      <p class="slide-right"><b>Sampean Mau Gak<br>Menjadi Istri Sekaligus Pasangan Hidup Mas? 😍❤️</b></p>
+      <div id="Tombol">
+       <a id="By" onClick="fungsimau()">Mau</a>
+       <a id="Bn" onClick="fungsigamau()">Gamau</a>
+     </div>
+  </section>
+  
+  <section id="iniakhir">
+  	<div class="wp" id="wpakhir"><img src="https://drive.google.com/file/d/1Zik94A3L4c--dbPyM7hI-rBh_6Ch_FR9/view?usp=drive_link"/></div>
+      <img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
+      <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+      <p id="palingakhir"></p>
+      <div id="TombolWA">
+       <a onClick="menuju()">Balas 💌</a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+function fungsimau(){
+       fungsi=0;tes();
+       teksjudulakhir = "Yeayyy! 🥳";
+       tekskalimatakhir = "Terimakasih Humaira udah mau nerima<br>Mas jadi suami sampean, hihi 🤭❤️";
+}
+function fungsigamau(){
+       fungsi=0;tes();
+       teksjudulakhir = "Yahhh 😫";
+       tekskalimatakhir = "Yaudah kalo sampean gamau,<br>biar Mas aja yang jadi<br>suami kamu, hehe 😆❤️";
+}
+
+teksjudulakhir2 = "I Love You, Ana";
+tekspalingakhir = "Jangan lupa balas pesan<br>ke WhatsApp Mas ya! ✨";
+  
+pesanwhatsapp = "Aku mau kok jadi Istri Mas ><";
+
+const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="https://malasid.github.io/html/maukahkamu.js"></script>
+</body>
+</html>
